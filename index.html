@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/81b8f92a56.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- header section -->
+
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Web Designer</p>
+          <h1>
+            Hi, I'm <span>Gourab Dey</span><br />
+            from India
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- about section  -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+              illo voluptatem consequuntur? Magnam cupiditate recusandae culpa,
+              a ipsa ab, voluptatibus neque voluptates ut harum, repudiandae
+              alias. Quidem eligendi laboriosam magni.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />Developing Web Site</li>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>DSA Analysis</span><br />Analysing algorithms</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Web Development</span><br />Weveloping Web Site</li>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>DSA Analysis</span><br />Analysing algorithms</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2022</span><br />B.Tech from UEM Kolkata</li>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>DSA Analysis</span><br />Analysing algorithms</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services section  -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              animi veritatis soluta facilis. Quis non natus dignissimos, cumque
+              maxime exercitationem enim. Recusandae, suscipit? Et nesciunt
+              quasi vero enim aut soluta?
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              animi veritatis soluta facilis. Quis non natus dignissimos, cumque
+              maxime exercitationem enim. Recusandae, suscipit? Et nesciunt
+              quasi vero enim aut soluta?
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              animi veritatis soluta facilis. Quis non natus dignissimos, cumque
+              maxime exercitationem enim. Recusandae, suscipit? Et nesciunt
+              quasi vero enim aut soluta?
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----portfolio----- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+                nobis error odit numquam dicta vero expedita ipsam saepe
+                mollitia officia quo inventore quas quia ducimus quos
+                repellendus et in. Maxime.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+                nobis error odit numquam dicta vero expedita ipsam saepe
+                mollitia officia quo inventore quas quia ducimus quos
+                repellendus et in. Maxime.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+                nobis error odit numquam dicta vero expedita ipsam saepe
+                mollitia officia quo inventore quas quia ducimus quos
+                repellendus et in. Maxime.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- -------contact section-------- -->
+
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> deyg6988@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 8389849446</p>
+            <p><i class="fa-solid fa-phone"></i> 9609426307</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://wa.me/+918389849446"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://www.instagram.com/gourab486/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/gourab-dey-1b2b8928a/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/Gourab dey-12022002023050-resume.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="top"><i class="fa-solid fa-arrow-up"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+    <script src="index2.js"></script>
+  </body>
+</html>
